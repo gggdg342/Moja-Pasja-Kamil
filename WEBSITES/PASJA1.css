@@ -1,0 +1,235 @@
+@media print {
+    nav, footer { 
+        display: none; 
+    }
+    body { 
+        background: white; 
+        color: black; 
+    }
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url(../DANE/FONTS/RobotoMono-Bold.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+.NAGLOWEK{
+    height: 15%;
+    width: 100%;
+    
+    
+
+}
+
+header{
+    
+    height: 65%;
+    width: 100%;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url(../DANE/OBRAZKI/header\ important.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-nazwa{
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    z-index: 1;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.header-nazwa p {
+    margin: 0;
+    text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.6);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+nav a:link {
+    
+    color: #333;
+    
+}
+
+nav a:visited {
+    color: #555; 
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+nav a:active {
+    color: #017cff; 
+}
+
+main{
+    background-color:  #e7f3ff;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 85%;
+    font-family: 'RobotoMono';
+}
+article{
+
+    background-color: #eee;
+    height: 100%;
+    width: 40%;
+    
+    border-radius: 25px 25px 25px 25px;
+    
+}
+
+aside{
+    height: 70%;
+    width: 40%;
+    
+}
+.sztuki_walki{
+    padding: 100px 10%;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+.sztuki_walki h1 { font-size: 40px;
+    margin-bottom: 20px; }
+.video-walki{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px 5px 5px 5px;
+}
+.video-walki iframe{
+    width: 80%;
+    max-width: 1000px;
+    height: 500px;
+    
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.silownia{
+    width: 100%;
+    background-color: #e7f3ff; 
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.gym-link{
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px; 
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.gym-link:hover { 
+    background-color: #0084ff;}
+
+
+footer{
+    padding: 40px;
+    
+    height: 15%;
+    width: 100%;
+    
+    background-color: #1a1a1a;
+    color: #888888;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;  /* tekst z lewej, audio z prawej */
+    align-items: center; 
+}
+
+footer p {
+    margin: 0;  
+}
+
+footer audio {
+    
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+@media screen and (width <= 900px){
+    main{
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    article{
+    height: 100%;
+    width: 100%;
+    
+}
+.video-walki{
+    padding: 0;
+}
+    nav{padding: 0;}
+    footer{
+        
+        text-align: center;
+    }
+}
